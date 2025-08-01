@@ -39,3 +39,11 @@ function sortear() {
     resultado += '</ul>';
     listaSorteio.innerHTML = resultado;
 }
+
+function reiniciar() {
+    arrayDoNomeDosAmigos = [];
+    listaDosAmigos = document.getElementById('lista-amigos');
+    listaDosAmigos.textContent = '';
+    listaSorteio = document.getElementById('lista-sorteio');
+    listaSorteio.textContent = '';
+}
