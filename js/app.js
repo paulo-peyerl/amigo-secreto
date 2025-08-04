@@ -12,6 +12,21 @@ function adicionar(){
     document.getElementById('nome-amigo').value = '';
 }
 
+function removerAmigo(){
+    let removerAmigo = document.getElementById('remover-amigo').value;
+    let index = arrayDoNomeDosAmigos.indexOf(removerAmigo);
+
+    if(index > -1){
+        arrayDoNomeDosAmigos.splice(index, 1);
+    }else{
+        alert('Pessoa não encontrada, tente novamente');
+    }
+
+    document.getElementById('remover-amigo').value = '';
+    listaDosAmigos = document.getElementById('lista-amigos');
+    listaDosAmigos.innerHTML = arrayDoNomeDosAmigos.join(', ');
+}
+
 function sortear() {
     let listaSorteio = document.getElementById('lista-sorteio');
     if(arrayDoNomeDosAmigos.length === 1){
