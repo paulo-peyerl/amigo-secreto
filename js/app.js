@@ -32,8 +32,6 @@ function sortear() {
     if(arrayDoNomeDosAmigos.length < 4){
         alert('Adicione pelo menos quatro nomes para sortear');
         return;
-    }else if(arrayDoNomeDosAmigos.length === 0){
-        alert('Nenhum nome adicionado para sorteio');
     }
 
     let sorteados = arrayDoNomeDosAmigos.slice();
