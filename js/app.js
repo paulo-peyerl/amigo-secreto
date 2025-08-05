@@ -29,7 +29,7 @@ function removerAmigo(){
 
 function sortear() {
     let listaSorteio = document.getElementById('lista-sorteio');
-    if(arrayDoNomeDosAmigos.length === 3){
+    if(arrayDoNomeDosAmigos.length < 4){
         alert('Adicione pelo menos quatro nomes para sortear');
         return;
     }else if(arrayDoNomeDosAmigos.length === 0){
