@@ -5,6 +5,9 @@ function adicionar(){
     if(nomesDosAmigos === '' ){
         alert('O campo não pode estar vazio.');
         return;
+    }else if(arrayDoNomeDosAmigos.includes(nomesDosAmigos)){
+        alert('Nome já adicionado, por favor espeficique os nomes');
+        return;
     }
 
     arrayDoNomeDosAmigos.push(nomesDosAmigos);
